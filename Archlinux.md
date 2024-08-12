@@ -42,7 +42,7 @@ Server = https://repo.archlinuxcn.org/$arch
 ```
 ```bash
 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
-sudo pacman -S archlinuxcn-keyring
+sudo pacman -Sy archlinuxcn-keyring
 sudo pacman -Syu
 ```
 重新更新源
