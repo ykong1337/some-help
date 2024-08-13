@@ -145,7 +145,8 @@ scoop alias add add 'scoop install $args[0]'
 scoop alias add rm 'scoop uninstall $args[0]'
 scoop alias add ls 'scoop list'
 scoop alias add u 'scoop update $args[0]'
-scoop alias add clean 'scoop cache rm *;scoop cleanup *'
+scoop alias add clean 'scoop cache rm *; scoop cleanup *'
+scoop alias add srch 'scoop search $args[0]'
 ```
 
 增加源
