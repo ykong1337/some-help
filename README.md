@@ -26,7 +26,7 @@ https://cdn.jsdelivr.net/gh/yk0n9/some-help@master/Surge.conf
 https://cdn.jsdelivr.net/gh/yk0n9/some-help@master/config.yaml
 ```
 
-#### Clash配置位置
+#### Clash 配置位置
 
 ```
 ~/.config/clash/config.yaml
@@ -35,15 +35,15 @@ https://cdn.jsdelivr.net/gh/yk0n9/some-help@master/config.yaml
 #### 多订阅用[URLEncode](https://www.urlencoder.org/)后的链接, 订阅之间用|分隔
 
 ```
-Clash: 
+Clash:
 https://sub.xeton.dev/sub?target=clash&list=true&url=订阅链接
 https://sub.xeton.dev/sub?target=clash&list=true&url=Encode后的[订阅|订阅|...]
 
-QuanX: 
+QuanX:
 https://sub.xeton.dev/sub?target=quanx&list=true&url=订阅链接
 https://sub.xeton.dev/sub?target=quanx&list=true&url=Encode后的[订阅|订阅|...]
 
-Surge: 
+Surge:
 https://sub.xeton.dev/sub?target=surge&ver=4&list=true&url=订阅链接
 https://sub.xeton.dev/sub?target=surge&ver=4&list=true&url=Encode后的[订阅|订阅|...]
 
@@ -53,11 +53,11 @@ https://limbopro.cyou/sub?target=clash&config=https%3A%2F%2Fraw.githubuserconten
 [订阅转换](https://acl4ssr-sub.github.io/)
 ```
 
-[Github加速转换](https://www.jsdelivr.com/github)
+[Github 加速转换](https://www.jsdelivr.com/github)
 
-#### Windows开机自启
+#### Windows 开机自启
 
-运行CMD，输入
+运行 CMD，输入
 
 ```
 shell:startup
@@ -78,7 +78,7 @@ nacos
 docker run --name some-nacos -p 8848:8848 -e MODE=standalone -d nacos/nacos-server:2.0.3
 ```
 
-#### 设置Git
+#### 设置 Git
 
 **~/.gitconfig**
 
@@ -102,7 +102,7 @@ autocrlf = false
 selected = manager
 ```
 
-#### Git命令流程
+#### Git 命令流程
 
 ```
 git init
@@ -111,7 +111,7 @@ git remote add origin https://github.com/user/repo.git
 git push -u origin master
 ```
 
-#### Git Sync Fork命令
+#### Git Sync Fork 命令
 
 ```
 git remote add upstream [url]
@@ -120,9 +120,9 @@ git checkout master
 git pull upstream master
 ```
 
-#### Windows下的包管理器 (PowerShell)
+#### Windows 下的包管理器 (PowerShell)
 
-安装scoop
+安装 scoop
 
 ```
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
@@ -177,7 +177,7 @@ scoop hold firefox
 scoop update *
 ```
 
-清理cache
+清理 cache
 
 ```
 scoop cache rm *
@@ -201,17 +201,20 @@ scoop install rustup
 ```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+
 ```
 dnf install rustup
 rustup-init
 rustup component add rust-analyzer
 ```
+
 ```
 source "$HOME/.cargo/env"
 ```
 
 ---
-安装LLVM
+
+安装 LLVM
 
 ```
 scoop install llvm
@@ -219,27 +222,31 @@ scoop install llvm
 
 **rustup default stable-msvc**
 
-下载 [C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) -- **使用C++的桌面开发**
+下载 [C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) -- **使用 C++的桌面开发**
 
 **rustup default stable-gnu**
 
-安装MinGW
+安装 MinGW
 
 ```
 scoop install mingw
 ```
 
 #### 其他
+
 ---
-安装CMake
+
+安装 CMake
 
 ```
 scoop install cmake
 ```
+
 ```
 scoop install clion@2023.1.7-231.9423.4
 ```
-安装MySQL
+
+安装 MySQL
 
 ```
 scoop install mysql57
@@ -293,7 +300,7 @@ source /etc/profile
 cargo install diesel_cli --no-default-features --features mysql
 ```
 
-**Windows 关闭VBS**
+**Windows 关闭 VBS**
 
 ```
 sudo bcdedit /set hypervisorlaunchtype off

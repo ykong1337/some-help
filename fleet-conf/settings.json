@@ -1,8 +1,8 @@
 {
-    "launchTerminalOnOpen": true,
-    "files.toggleFolderMode": "singleClick",
-    "vimEmulationEnabled": true,
-    "restoreWorkspacesOnStartup": false,
-    "keymap": "pc-ij",
-    "theme": "sync-with-os"
+  "launchTerminalOnOpen": true,
+  "files.toggleFolderMode": "singleClick",
+  "vimEmulationEnabled": true,
+  "restoreWorkspacesOnStartup": false,
+  "keymap": "pc-ij",
+  "theme": "sync-with-os"
 }

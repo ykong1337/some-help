@@ -2,7 +2,7 @@ mode: rule
 mixed-port: 7890
 allow-lan: false
 log-level: info
-secret: ''
+secret: ""
 external-controller: 127.0.0.1:9090
 dns:
   enable: true

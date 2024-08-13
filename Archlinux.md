@@ -1,11 +1,15 @@
 #### BIOS
+
 ```
 1.开启CSM (兼容)
 2.开启AHCI
 3.关闭Source [Fast] Boot (如果安装Windows开启)
 ```
+
 #### Archlinux
+
 **连接网络**
+
 ```
 iwctl
 device list
@@ -14,14 +18,19 @@ station wlan0 get-networks
 station wlan0 connect [WIRELESS-NAME]
 exit
 ```
+
 **使用国内源**
+
 ```bash
 vim /etc/pacman.d/mirrorlist
 ```
+
 ```bash
 Server = https://mirrors.aliyun.com/archlinux/$repo/os/$arch
 ```
+
 **更新包**
+
 ```
 sudo pacman -Syy
 sudo rm -rf /etc/pacman.d/gnupg
@@ -30,30 +39,40 @@ sudo pacman-key --populate archlinux
 sudo pacman -S archlinux-keyring
 sudo pacman -Syu
 ```
+
 **开启 32 位支持库**
+
 ```bash
 vim /etc/pacman.conf
 ```
+
 去掉[multilib]一节中两行的注释开启 32 位库支持
-**添加Archlinuxcn源**
+**添加 Archlinuxcn 源**
+
 ```
 [archlinuxcn]
 Server = https://repo.archlinuxcn.org/$arch
 ```
+
 ```bash
 sudo pacman-key --lsign-key "farseerfc@archlinux.org"
 sudo pacman -Sy archlinuxcn-keyring
 sudo pacman -Syu
 ```
+
 重新更新源
+
 ```bash
 sudo rm -R /var/lib/pacman/sync
 sudo pacman -Syy
 ```
+
 卸载
+
 ```
 sudo pacman -Rsn xxx
 ```
+
 **安装一些基础功能包**
 
 ```bash
@@ -110,18 +129,25 @@ SDL_IM_MODULE=fcitx
 注销，重新登陆，就可以发现已经可以在各个软件中输入中文了
 
 **英特尔核芯显卡**
+
 ```bash
 sudo pacman -S mesa lib32-mesa vulkan-intel lib32-vulkan-intel
 ```
+
 **英伟达独立显卡**
+
 ```bash
 sudo pacman -S nvidia nvidia-settings lib32-nvidia-utils
 ```
+
 **AMD 显卡**
+
 ```bash
 sudo pacman -S mesa lib32-mesa xf86-video-amdgpu vulkan-radeon lib32-vulkan-radeon libva-mesa-driver lib32-libva-mesa-driver mesa-vdpau lib32-mesa-vdpau
 ```
+
 **创建桌面图标**
+
 ```
 cd ~/Desktop
 touch idea.desktop
@@ -131,6 +157,7 @@ or
 
 sudo vim /usr/share/applications/idea.desktop
 ```
+
 ```
 [Desktop Entry]
 Name=IDEA
@@ -139,33 +166,44 @@ Exec=/home/ideaIU/bin/idea.sh
 Icon=/home/ideaIU/bin/idea.svg
 Terminal=false
 ```
+
 sddm.conf 文件现在默认不会自动生成了。需要自己创建：
+
 ```bash
 sudo vim /usr/local/etc/sddm.conf
 ```
+
 写入
+
 ```
 MinimumUid=0
 MaximumUid=0
 ```
-0就是root用户。
+
+0 就是 root 用户。
 
 然后更改
+
 ```bash
 sudo vim /usr/local/etc/pam.d/sddm
 ```
-把include之后的login，替换成system，一共4个。
 
-之后就可以以root登录sddm了
+把 include 之后的 login，替换成 system，一共 4 个。
 
-将root加到pulse-access组
+之后就可以以 root 登录 sddm 了
+
+将 root 加到 pulse-access 组
+
 ```bash
 sudo usermod -a -G pulse-access root
 ```
+
 系统代理设置
+
 ```bash
 vim /etc/environment
 ```
+
 ```bash
 http_proxy=http://ip:port
 https_proxy=http://ip:port
