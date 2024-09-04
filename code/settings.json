@@ -15,7 +15,6 @@
   "diffEditor.ignoreTrimWhitespace": false,
   "terminal.integrated.defaultProfile.windows": "Git Bash",
 
-  "prettier.useEditorConfig": false,
   "commentTranslate.targetLanguage": "zh-CN",
   "workbench.colorTheme": "Andromeda",
   "workbench.iconTheme": "catppuccin-frappe",
