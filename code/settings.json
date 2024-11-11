@@ -13,7 +13,6 @@
   "explorer.fileNesting.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-  "terminal.integrated.defaultProfile.windows": "Git Bash",
 
   "commentTranslate.targetLanguage": "zh-CN",
   "workbench.colorTheme": "Catppuccin Latte",
