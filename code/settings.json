@@ -13,7 +13,11 @@
   "explorer.fileNesting.enabled": true,
   "diffEditor.hideUnchangedRegions.enabled": true,
   "diffEditor.ignoreTrimWhitespace": false,
-
+  "editor.folding": false,
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+  
   "commentTranslate.targetLanguage": "zh-CN",
   "workbench.colorTheme": "Catppuccin Latte",
   "workbench.iconTheme": "catppuccin-latte",
