@@ -88,7 +88,7 @@ proxy = 127.0.0.1:7890
 [https]
 proxy = 127.0.0.1:7890
 [user]
-email = ykonghao@icloud.com
+email = yk0n9@outlook.com
 name = yk0n9
 [pull]
 rebase = false
